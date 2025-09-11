@@ -32,7 +32,7 @@ export default function DestinationPage({ params }: DestinationPageProps) {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="relative h-[40vh] md:h-[50vh] rounded-lg overflow-hidden">
+      <div className="relative h-[40vh] md:h-[50vh] rounded-xl overflow-hidden">
         <Image
           src={image.imageUrl.replace('/600/400', '/1280/720')}
           alt={image.description}
@@ -58,7 +58,10 @@ export default function DestinationPage({ params }: DestinationPageProps) {
 
       <div className="grid md:grid-cols-3 gap-8 mt-8">
         <div className="md:col-span-2">
-          <div className="flex gap-2 mb-4">
+          <div className="flex flex-wrap gap-2 mb-4">
+            <Badge variant="default" className="capitalize text-base">
+                {destination.category}
+            </Badge>
             {destination.tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="capitalize">
                 {tag}
@@ -72,7 +75,7 @@ export default function DestinationPage({ params }: DestinationPageProps) {
           
           <h2 className="text-2xl font-bold font-headline mb-4">Reviews</h2>
           <div className="flex items-center gap-2 mb-6">
-            <div className="flex text-accent">
+            <div className="flex text-secondary">
                 {[...Array(5)].map((_, i) => <Star key={i} className={i < Math.round(destination.rating) ? 'fill-current' : ''} />)}
             </div>
             <span className="font-bold text-lg">{destination.rating}</span>

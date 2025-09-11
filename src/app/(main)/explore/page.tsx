@@ -18,11 +18,11 @@ import { Badge } from '@/components/ui/badge';
 
 export default function ExplorePage() {
   const [selectedDestination, setSelectedDestination] = useState<typeof destinations[0] | null>(null);
-  const center = { lat: 20, lng: 0 };
-  const tags = [...new Set(destinations.flatMap((d) => d.tags))];
+  const center = { lat: 20, lng: 77 };
+  const categories = [...new Set(destinations.map((d) => d.category))];
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-[calc(100vh-100px)]">
       <div className="flex justify-between items-center mb-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight font-headline">
@@ -44,22 +44,22 @@ export default function ExplorePage() {
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Filter by category</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            {tags.map((tag) => (
-              <DropdownMenuCheckboxItem key={tag}>
-                {tag.charAt(0).toUpperCase() + tag.slice(1)}
+            {categories.map((category) => (
+              <DropdownMenuCheckboxItem key={category}>
+                {category}
               </DropdownMenuCheckboxItem>
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
 
-      <Card className="flex-grow overflow-hidden relative">
+      <Card className="flex-grow overflow-hidden relative rounded-xl">
         <APIProvider
           apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
         >
           <Map
             defaultCenter={center}
-            defaultZoom={2}
+            defaultZoom={5}
             gestureHandling={'greedy'}
             disableDefaultUI={true}
             mapId="a3a2d7b1e8a94a9a"
@@ -75,8 +75,13 @@ export default function ExplorePage() {
         </APIProvider>
         {selectedDestination && (
            <Card className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] max-w-sm p-4">
-             <h3 className="font-bold">{selectedDestination.name}</h3>
-             <p className="text-sm text-muted-foreground">{selectedDestination.description}</p>
+             <div className="flex justify-between items-start">
+                <div>
+                    <h3 className="font-bold">{selectedDestination.name}</h3>
+                    <p className="text-sm text-muted-foreground">{selectedDestination.description}</p>
+                </div>
+                <Badge variant="default">{selectedDestination.category}</Badge>
+             </div>
              <div className="flex gap-2 mt-2">
                 {selectedDestination.tags.slice(0, 3).map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
              </div>
