@@ -4,50 +4,8 @@
     {
       "id": "landing-hero",
       "description": "A stunning view of a tropical beach with turquoise water and a sunset.",
-      "imageUrl": "https://picsum.photos/seed/100/1920/1080",
-      "imageHint": "tropical beach"
-    },
-    {
-      "id": "paris",
-      "description": "The Eiffel Tower in Paris, France.",
-      "imageUrl": "https://picsum.photos/seed/101/600/400",
-      "imageHint": "Eiffel Tower"
-    },
-    {
-      "id": "kyoto",
-      "description": "The Fushimi Inari Shrine in Kyoto, Japan.",
-      "imageUrl": "https://picsum.photos/seed/102/600/400",
-      "imageHint": "Kyoto shrine"
-    },
-    {
-      "id": "santorini",
-      "description": "White buildings with blue domes in Santorini, Greece.",
-      "imageUrl": "https://picsum.photos/seed/103/600/400",
-      "imageHint": "Santorini Greece"
-    },
-    {
-      "id": "bora-bora",
-      "description": "Overwater bungalows in Bora Bora.",
-      "imageUrl": "https://picsum.photos/seed/104/600/400",
-      "imageHint": "Bora Bora"
-    },
-    {
-      "id": "new-york",
-      "description": "The skyline of New York City with the Empire State Building.",
-      "imageUrl": "https://picsum.photos/seed/105/600/400",
-      "imageHint": "New York"
-    },
-    {
-      "id": "rome",
-      "description": "The Colosseum in Rome, Italy.",
-      "imageUrl": "https://picsum.photos/seed/106/600/400",
-      "imageHint": "Colosseum Rome"
-    },
-    {
-      "id": "login-bg",
-      "description": "Abstract gradient background for login page.",
-      "imageUrl": "https://picsum.photos/seed/107/1920/1080",
-      "imageHint": "abstract gradient"
+      "imageUrl": "https://picsum.photos/seed/109/1920/1080",
+      "imageHint": "Goa beach"
     },
     {
       "id": "shimla",
@@ -78,6 +36,36 @@
       "description": "A traditional houseboat on the backwaters of Kerala, India.",
       "imageUrl": "https://picsum.photos/seed/112/600/400",
       "imageHint": "Kerala backwaters"
+    },
+     {
+      "id": "login-bg",
+      "description": "The Taj Mahal in Agra at sunrise",
+      "imageUrl": "https://picsum.photos/seed/114/1920/1080",
+      "imageHint": "Taj Mahal"
+    },
+    {
+      "id": "manali",
+      "description": "Solang Valley near Manali, covered in snow.",
+      "imageUrl": "https://picsum.photos/seed/113/600/400",
+      "imageHint": "Manali valley"
+    },
+    {
+      "id": "agra",
+      "description": "The Taj Mahal in Agra, India.",
+      "imageUrl": "https://picsum.photos/seed/114/600/400",
+      "imageHint": "Taj Mahal"
+    },
+    {
+      "id": "udaipur",
+      "description": "City Palace and Lake Pichola in Udaipur, India.",
+      "imageUrl": "https://picsum.photos/seed/115/600/400",
+      "imageHint": "Udaipur palace"
+    },
+    {
+      "id": "munnar",
+      "description": "Lush green tea plantations in Munnar, Kerala.",
+      "imageUrl": "https://picsum.photos/seed/116/600/400",
+      "imageHint": "Munnar tea"
     }
   ]
 }
