@@ -33,7 +33,7 @@ const Logo = ({ className }: { className?: string }) => {
           strokeLinejoin="round"
         />
       </svg>
-      <span className="font-headline">Voyager</span>
+      <span className="font-headline">Tripsters</span>
     </div>
   );
 };

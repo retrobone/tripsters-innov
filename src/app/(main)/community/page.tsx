@@ -48,7 +48,7 @@ export default function CommunityPage() {
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold tracking-tight font-headline">
-          Voyager Community
+          Tripsters Community
         </h1>
         <p className="text-muted-foreground">
           Share tips, ask questions, and connect with fellow travelers.

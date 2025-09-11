@@ -41,7 +41,7 @@ export default function LandingPage() {
               Your Journey Begins Here
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/90 drop-shadow-sm">
-              Discover, plan, and book your next adventure with Voyager. The world is at your fingertips.
+              Discover, plan, and book your next adventure with Tripsters. The world is at your fingertips.
             </p>
             <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
               <Link href="/dashboard">Explore Destinations</Link>
@@ -53,7 +53,7 @@ export default function LandingPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Travel, Simplified</h2>
             <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-lg">
-              Voyager offers everything you need for a seamless travel experience, from inspiration to booking.
+              Tripsters offers everything you need for a seamless travel experience, from inspiration to booking.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12 text-left">
               <Card className="hover:shadow-lg transition-shadow">
@@ -80,8 +80,8 @@ export default function LandingPage() {
               </Card>
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <div className="p-3 bg-green-500/20 rounded-full w-max mb-4">
-                    <Briefcase className="h-8 w-8 text-green-500" />
+                  <div className="p-3 bg-secondary/20 rounded-full w-max mb-4">
+                    <Briefcase className="h-8 w-8 text-secondary" />
                   </div>
                   <h3 className="text-xl font-bold font-headline">Seamless Bookings</h3>
                   <p className="mt-2 text-muted-foreground">
@@ -94,9 +94,9 @@ export default function LandingPage() {
         </section>
       </main>
 
-      <footer className="bg-secondary">
+      <footer className="bg-muted border-t">
         <div className="container mx-auto py-6 px-4 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Voyager. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Tripsters. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

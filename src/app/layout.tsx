@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { WishlistProvider } from '@/hooks/use-wishlist.tsx';
 
 export const metadata: Metadata = {
-  title: 'Voyager',
+  title: 'Tripsters',
   description: 'Plan, book, and manage your travel experiences.',
 };
 
