@@ -45,9 +45,9 @@ export default function PlanPage() {
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      destination: '',
-      duration: '7',
-      preferences: 'I enjoy history, local food, and some relaxing beach time. I prefer a medium budget.',
+      destination: 'Goa, India',
+      duration: '5',
+      preferences: 'Looking for a relaxing beach vacation with family. We enjoy good seafood, and some light water sports. Budget is moderate.',
     },
   });
 
@@ -74,10 +74,10 @@ export default function PlanPage() {
       <div className="text-center mb-8">
         <Bot className="h-12 w-12 mx-auto text-primary mb-2" />
         <h1 className="text-3xl font-bold tracking-tight font-headline">
-          AI-Powered Trip Planner
+          AI Trip Planner
         </h1>
         <p className="text-muted-foreground">
-          Describe your dream trip, and let our AI craft the perfect itinerary for you.
+          कहाँ जाना चाहते हैं? Describe your dream trip and let our AI build the perfect itinerary.
         </p>
       </div>
 
@@ -92,7 +92,7 @@ export default function PlanPage() {
                   <FormItem>
                     <FormLabel>Destination</FormLabel>
                     <FormControl>
-                      <Input placeholder="e.g., Paris, France" {...field} />
+                      <Input placeholder="e.g., Shimla, India" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -105,7 +105,7 @@ export default function PlanPage() {
                   <FormItem>
                     <FormLabel>Duration (in days)</FormLabel>
                     <FormControl>
-                      <Input type="number" placeholder="e.g., 7" {...field} />
+                      <Input type="number" placeholder="e.g., 5" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -119,14 +119,14 @@ export default function PlanPage() {
                     <FormLabel>Your Preferences</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Tell us your interests, budget, and travel style..."
+                        placeholder="Tell us your interests, budget, and who you're travelling with..."
                         className="resize-none"
                         rows={5}
                         {...field}
                       />
                     </FormControl>
                     <FormDescription>
-                      The more detail, the better the plan!
+                      The more detail, the better the plan! For example: "Family trip, kids love beaches, moderate budget".
                     </FormDescription>
                     <FormMessage />
                   </FormItem>

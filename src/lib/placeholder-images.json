@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -47,6 +48,36 @@
       "description": "Abstract gradient background for login page.",
       "imageUrl": "https://picsum.photos/seed/107/1920/1080",
       "imageHint": "abstract gradient"
+    },
+    {
+      "id": "shimla",
+      "description": "The Ridge in Shimla, with Christ Church in the background.",
+      "imageUrl": "https://picsum.photos/seed/108/600/400",
+      "imageHint": "Shimla India"
+    },
+    {
+      "id": "goa",
+      "description": "A beautiful beach in Goa, India with palm trees.",
+      "imageUrl": "https://picsum.photos/seed/109/600/400",
+      "imageHint": "Goa beach"
+    },
+    {
+      "id": "jaipur",
+      "description": "Hawa Mahal in Jaipur, the Pink City of India.",
+      "imageUrl": "https://picsum.photos/seed/110/600/400",
+      "imageHint": "Jaipur palace"
+    },
+    {
+      "id": "ladakh",
+      "description": "Pangong Lake in Ladakh, with mountains in the background.",
+      "imageUrl": "https://picsum.photos/seed/111/600/400",
+      "imageHint": "Ladakh lake"
+    },
+    {
+      "id": "kerala",
+      "description": "A traditional houseboat on the backwaters of Kerala, India.",
+      "imageUrl": "https://picsum.photos/seed/112/600/400",
+      "imageHint": "Kerala backwaters"
     }
   ]
 }

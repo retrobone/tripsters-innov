@@ -74,9 +74,11 @@ export default {
         },
       },
       borderRadius: {
-        lg: '12px',
-        md: '8px',
-        sm: '4px',
+        lg: `var(--radius)`,
+        md: `calc(var(--radius) - 4px)`,
+        sm: 'calc(var(--radius) - 8px)',
+        xl: '20px',
+        '2xl': '28px',
       },
       keyframes: {
         'accordion-down': {
