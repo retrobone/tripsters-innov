@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { ListFilter } from 'lucide-react';
+import { ListFilter, AlertTriangle } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
@@ -20,6 +20,7 @@ export default function ExplorePage() {
   const [selectedDestination, setSelectedDestination] = useState<typeof destinations[0] | null>(null);
   const center = { lat: 20, lng: 77 };
   const categories = [...new Set(destinations.map((d) => d.category))];
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
   return (
     <div className="flex flex-col h-[calc(100vh-100px)]">
@@ -53,42 +54,63 @@ export default function ExplorePage() {
         </DropdownMenu>
       </div>
 
-      <Card className="flex-grow overflow-hidden relative rounded-xl">
-        <APIProvider
-          apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
-        >
-          <Map
-            defaultCenter={center}
-            defaultZoom={5}
-            gestureHandling={'greedy'}
-            disableDefaultUI={true}
-            mapId="a3a2d7b1e8a94a9a"
-          >
-            {destinations.map((dest) => (
-              <AdvancedMarker
-                key={dest.id}
-                position={dest.position}
-                onClick={() => setSelectedDestination(dest)}
-              />
-            ))}
-          </Map>
-        </APIProvider>
-        {selectedDestination && (
-           <Card className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] max-w-sm p-4">
-             <div className="flex justify-between items-start">
-                <div>
+      <Card className="flex-grow overflow-hidden relative rounded-xl flex items-center justify-center">
+        {!apiKey || apiKey === 'YOUR_GOOGLE_MAPS_API_KEY' ? (
+          <div className="text-center text-muted-foreground p-8">
+            <AlertTriangle className="mx-auto h-12 w-12 mb-4 text-destructive" />
+            <h2 className="text-xl font-semibold text-foreground">Google Maps API Key is Missing</h2>
+            <p className="mt-2 max-w-md mx-auto">
+              To display the map, please get an API key from the Google Cloud Console and add it to the `.env.local` file as `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`.
+            </p>
+            <p className="mt-2 text-sm">
+              After adding the key, you must restart your development server.
+            </p>
+          </div>
+        ) : (
+          <>
+            <APIProvider apiKey={apiKey}>
+              <Map
+                defaultCenter={center}
+                defaultZoom={5}
+                gestureHandling={'greedy'}
+                disableDefaultUI={true}
+                mapId="a3a2d7b1e8a94a9a"
+              >
+                {destinations.map((dest) => (
+                  <AdvancedMarker
+                    key={dest.id}
+                    position={dest.position}
+                    onClick={() => setSelectedDestination(dest)}
+                  />
+                ))}
+              </Map>
+            </APIProvider>
+            {selectedDestination && (
+              <Card className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] max-w-sm p-4">
+                <div className="flex justify-between items-start">
+                  <div>
                     <h3 className="font-bold">{selectedDestination.name}</h3>
-                    <p className="text-sm text-muted-foreground">{selectedDestination.description}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {selectedDestination.description}
+                    </p>
+                  </div>
+                  <Badge variant="default">{selectedDestination.category}</Badge>
                 </div>
-                <Badge variant="default">{selectedDestination.category}</Badge>
-             </div>
-             <div className="flex gap-2 mt-2">
-                {selectedDestination.tags.slice(0, 3).map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
-             </div>
-             <Button asChild size="sm" className="mt-4 w-full">
-                <Link href={`/destinations/${selectedDestination.slug}`}>View Details</Link>
-             </Button>
-           </Card>
+                <div className="flex gap-2 mt-2">
+                  {selectedDestination.tags.slice(0, 3).map((tag) => (
+                    <Badge key={tag} variant="secondary">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+                <Button asChild size="sm" className="mt-4 w-full">
+                  <Link href={`/destinations/${selectedDestination.slug}`}>
+                    View Details
+                  </Link>
+                </Button>
+              </Card>
+            )}
+          </>
         )}
       </Card>
     </div>
