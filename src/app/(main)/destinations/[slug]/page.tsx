@@ -99,7 +99,7 @@ export default function DestinationPage({ params }: DestinationPageProps) {
             <CardHeader>
               <CardTitle>Book Your Trip</CardTitle>
               <p className="text-2xl font-bold text-primary">
-                ${destination.pricePerNight}
+                ₹{destination.pricePerNight.toLocaleString('en-IN')}
                 <span className="text-sm font-normal text-muted-foreground">/night</span>
               </p>
             </CardHeader>
