@@ -18,6 +18,7 @@ import { Button } from '@/components/ui/button';
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -28,6 +29,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 const navItems = [
   { href: '/dashboard', icon: LayoutGrid, label: 'Home' },
@@ -95,7 +97,10 @@ function Header() {
         </SheetTrigger>
         <SheetContent side="left" className="flex flex-col p-4">
            <SheetHeader className='mb-4'>
-             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+            <VisuallyHidden>
+             <SheetTitle>Navigation Menu</SheetTitle>
+             <SheetDescription>Main navigation menu for accessing different pages of the application.</SheetDescription>
+            </VisuallyHidden>
               <Link href="/dashboard">
                 <Logo className="text-foreground" />
               </Link>
