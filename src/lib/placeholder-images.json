@@ -9,32 +9,32 @@
     },
     {
       "id": "shimla",
-      "description": "The Ridge in Shimla, with Christ Church in the background.",
-      "imageUrl": "https://picsum.photos/seed/108/600/400",
+      "description": "Aerial view of Shimla with mountains in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1616191983993-8c4d26252c93?q=80&w=600&h=400&fit=crop",
       "imageHint": "Shimla India"
     },
     {
       "id": "goa",
-      "description": "A beautiful beach in Goa, India with palm trees.",
-      "imageUrl": "https://picsum.photos/seed/109/600/400",
+      "description": "A beautiful beach in Goa, India with palm trees and a calm sea.",
+      "imageUrl": "https://images.unsplash.com/photo-1590372728284-ac5c942a0003?q=80&w=600&h=400&fit=crop",
       "imageHint": "Goa beach"
     },
     {
       "id": "jaipur",
       "description": "Hawa Mahal in Jaipur, the Pink City of India.",
-      "imageUrl": "https://picsum.photos/seed/110/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1617158854999-73e4f355799c?q=80&w=600&h=400&fit=crop",
       "imageHint": "Jaipur palace"
     },
     {
       "id": "ladakh",
       "description": "Pangong Lake in Ladakh, with mountains in the background.",
-      "imageUrl": "https://picsum.photos/seed/111/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1588142371991-f92b74054a8a?q=80&w=600&h=400&fit=crop",
       "imageHint": "Ladakh lake"
     },
     {
       "id": "kerala",
       "description": "A traditional houseboat on the backwaters of Kerala, India.",
-      "imageUrl": "https://picsum.photos/seed/112/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1602216056096-3b40402e9a5c?q=80&w=600&h=400&fit=crop",
       "imageHint": "Kerala backwaters"
     },
      {
@@ -46,25 +46,25 @@
     {
       "id": "manali",
       "description": "Solang Valley near Manali, covered in snow.",
-      "imageUrl": "https://picsum.photos/seed/113/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1633519890456-4caf503a6b32?q=80&w=600&h=400&fit=crop",
       "imageHint": "Manali valley"
     },
     {
       "id": "agra",
       "description": "The Taj Mahal in Agra, India.",
-      "imageUrl": "https://picsum.photos/seed/114/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=600&h=400&fit=crop",
       "imageHint": "Taj Mahal"
     },
     {
       "id": "udaipur",
       "description": "City Palace and Lake Pichola in Udaipur, India.",
-      "imageUrl": "https://picsum.photos/seed/115/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1599661046223-e0d418f1e0e8?q=80&w=600&h=400&fit=crop",
       "imageHint": "Udaipur palace"
     },
     {
       "id": "munnar",
       "description": "Lush green tea plantations in Munnar, Kerala.",
-      "imageUrl": "https://picsum.photos/seed/116/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1616584229560-a8b2b6fb620c?q=80&w=600&h=400&fit=crop",
       "imageHint": "Munnar tea"
     }
   ]
