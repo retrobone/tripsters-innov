@@ -15,7 +15,13 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { cn } from '@/lib/utils';
 import Logo from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
 import {
   Tooltip,
   TooltipContent,
@@ -88,9 +94,12 @@ function Header() {
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="flex flex-col p-4">
-          <Link href="/dashboard" className="mb-4">
-            <Logo className="text-foreground" />
-          </Link>
+           <SheetHeader className='mb-4'>
+             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              <Link href="/dashboard">
+                <Logo className="text-foreground" />
+              </Link>
+           </SheetHeader>
           <MainNav />
         </SheetContent>
       </Sheet>
