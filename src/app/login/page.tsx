@@ -15,7 +15,7 @@ import Logo from '@/components/icons/logo';
 import placeholderImages from '@/lib/placeholder-images.json';
 
 export default function LoginPage() {
-  const bgImage = placeholderImages.find(img => img.id === 'login-bg');
+  const bgImage = placeholderImages.placeholderImages.find(img => img.id === 'login-bg');
 
   return (
     <div className="w-full lg:grid lg:min-h-screen lg:grid-cols-2">

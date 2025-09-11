@@ -109,7 +109,7 @@ export const destinations: Destination[] = [
 ];
 
 export const getImageForDestination = (destination: Destination) => {
-  const image = placeholderImages.find((img) => img.id === destination.imageId);
+  const image = placeholderImages.placeholderImages.find((img) => img.id === destination.imageId);
   return (
     image || {
       imageUrl: 'https://picsum.photos/seed/default/600/400',

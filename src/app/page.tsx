@@ -7,7 +7,7 @@ import Logo from '@/components/icons/logo';
 import placeholderImages from '@/lib/placeholder-images.json';
 
 export default function LandingPage() {
-  const heroImage = placeholderImages.find((img) => img.id === 'landing-hero');
+  const heroImage = placeholderImages.placeholderImages.find((img) => img.id === 'landing-hero');
 
   return (
     <div className="flex flex-col min-h-screen">
