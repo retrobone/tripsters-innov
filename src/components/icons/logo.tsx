@@ -77,9 +77,6 @@ const Logo = ({ className }: { className?: string }) => {
           strokeWidth="1.5"
           strokeLinecap="round"
         />
-        <span className="font-headline text-2xl" style={{color: '#1E3A8A'}}>
-            Trip<span style={{color: '#F97316'}}>s</span>ters
-        </span>
       </svg>
       <span className="font-headline">Tripsters</span>
     </div>
