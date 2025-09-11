@@ -10,31 +10,31 @@
     {
       "id": "shimla",
       "description": "Aerial view of Shimla with mountains in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1616191983993-8c4d26252c93?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
       "imageHint": "Shimla India"
     },
     {
       "id": "goa",
       "description": "A beautiful beach in Goa, India with palm trees and a calm sea.",
-      "imageUrl": "https://images.unsplash.com/photo-1590372728284-ac5c942a0003?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
       "imageHint": "Goa beach"
     },
     {
       "id": "jaipur",
       "description": "Hawa Mahal in Jaipur, the Pink City of India.",
-      "imageUrl": "https://images.unsplash.com/photo-1617158854999-73e4f355799c?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
       "imageHint": "Jaipur palace"
     },
     {
       "id": "ladakh",
       "description": "Pangong Lake in Ladakh, with mountains in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1588142371991-f92b74054a8a?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
       "imageHint": "Ladakh lake"
     },
     {
       "id": "kerala",
       "description": "A traditional houseboat on the backwaters of Kerala, India.",
-      "imageUrl": "https://images.unsplash.com/photo-1602216056096-3b40402e9a5c?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/105/600/400",
       "imageHint": "Kerala backwaters"
     },
      {
@@ -46,25 +46,25 @@
     {
       "id": "manali",
       "description": "Solang Valley near Manali, covered in snow.",
-      "imageUrl": "https://images.unsplash.com/photo-1633519890456-4caf503a6b32?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/106/600/400",
       "imageHint": "Manali valley"
     },
     {
       "id": "agra",
       "description": "The Taj Mahal in Agra, India.",
-      "imageUrl": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/107/600/400",
       "imageHint": "Taj Mahal"
     },
     {
       "id": "udaipur",
       "description": "City Palace and Lake Pichola in Udaipur, India.",
-      "imageUrl": "https://images.unsplash.com/photo-1599661046223-e0d418f1e0e8?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/108/600/400",
       "imageHint": "Udaipur palace"
     },
     {
       "id": "munnar",
       "description": "Lush green tea plantations in Munnar, Kerala.",
-      "imageUrl": "https://images.unsplash.com/photo-1616584229560-a8b2b6fb620c?q=80&w=600&h=400&fit=crop",
+      "imageUrl": "https://picsum.photos/seed/110/600/400",
       "imageHint": "Munnar tea"
     }
   ]
