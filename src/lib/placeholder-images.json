@@ -1,71 +1,10 @@
-
 {
   "placeholderImages": [
     {
-      "id": "landing-hero",
-      "description": "A stunning view of a tropical beach with turquoise water and a sunset.",
-      "imageUrl": "https://picsum.photos/seed/109/1920/1080",
-      "imageHint": "Goa beach"
-    },
-    {
-      "id": "shimla",
-      "description": "Aerial view of Shimla with mountains in the background.",
-      "imageUrl": "https://picsum.photos/seed/101/600/400",
-      "imageHint": "Shimla India"
-    },
-    {
-      "id": "goa",
-      "description": "A beautiful beach in Goa, India with palm trees and a calm sea.",
-      "imageUrl": "https://picsum.photos/seed/102/600/400",
-      "imageHint": "Goa beach"
-    },
-    {
-      "id": "jaipur",
-      "description": "Hawa Mahal in Jaipur, the Pink City of India.",
-      "imageUrl": "https://picsum.photos/seed/103/600/400",
-      "imageHint": "Jaipur palace"
-    },
-    {
-      "id": "ladakh",
-      "description": "Pangong Lake in Ladakh, with mountains in the background.",
-      "imageUrl": "https://picsum.photos/seed/104/600/400",
-      "imageHint": "Ladakh lake"
-    },
-    {
-      "id": "kerala",
-      "description": "A traditional houseboat on the backwaters of Kerala, India.",
-      "imageUrl": "https://picsum.photos/seed/105/600/400",
-      "imageHint": "Kerala backwaters"
-    },
-     {
-      "id": "login-bg",
-      "description": "The Taj Mahal in Agra at sunrise",
-      "imageUrl": "https://picsum.photos/seed/114/1920/1080",
-      "imageHint": "Taj Mahal"
-    },
-    {
-      "id": "manali",
-      "description": "Solang Valley near Manali, covered in snow.",
-      "imageUrl": "https://picsum.photos/seed/106/600/400",
-      "imageHint": "Manali valley"
-    },
-    {
-      "id": "agra",
-      "description": "The Taj Mahal in Agra, India.",
-      "imageUrl": "https://picsum.photos/seed/107/600/400",
-      "imageHint": "Taj Mahal"
-    },
-    {
-      "id": "udaipur",
-      "description": "City Palace and Lake Pichola in Udaipur, India.",
-      "imageUrl": "https://picsum.photos/seed/108/600/400",
-      "imageHint": "Udaipur palace"
-    },
-    {
-      "id": "munnar",
-      "description": "Lush green tea plantations in Munnar, Kerala.",
-      "imageUrl": "https://picsum.photos/seed/110/600/400",
-      "imageHint": "Munnar tea"
+      "id": "ziro",
+      "imageUrl": "https://picsum.photos/seed/ziro/600/400",
+      "description": "A beautiful landscape of Ziro Valley",
+      "imageHint": "landscape, valley, mountains, nature"
     }
   ]
 }
