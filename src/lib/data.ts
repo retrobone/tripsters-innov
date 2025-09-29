@@ -1,23 +1,9 @@
-import placeholderImages from './placeholder-images.json';
+// File: retrobone/tripsters-innov/tripsters-innov-25d0006c070fe2f6384c93b56a848a48898dcf98/src/lib/data.ts
 
-export type Destination = {
-  id: number;
-  slug: string;
-  name: string;
-  country: string;
-  description: string;
-  longDescription: string;
-  rating: number;
-  reviews: number;
-  pricePerNight: number;
-  category: string;
-  tags: string[];
-  imageId: string;
-  position: { lat: number; lng: number };
-};
+// ... (keep all the existing destination data for Shimla, Goa, etc.)
 
 export const destinations: Destination[] = [
-  // ... (keep all the existing destinations like Shimla, Goa, etc.)
+  // ... (all your existing destinations)
   {
     id: 9,
     slug: 'munnar-india',
@@ -34,7 +20,7 @@ export const destinations: Destination[] = [
     imageId: 'munnar',
     position: { lat: 10.0889, lng: 77.0595 },
   },
-  // Add this new destination for Ziro
+  // PASTE THE ZIRO DATA HERE
   {
     id: 10,
     slug: 'ziro-india',
@@ -53,6 +39,4 @@ export const destinations: Destination[] = [
   },
 ];
 
-export const getImageForDestination = (destination: Destination) => {
-  // ... (this function remains unchanged)
-};
+// ... (rest of the file remains the same)
