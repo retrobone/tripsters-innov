@@ -1,34 +1,16 @@
-import type {NextConfig} from 'next';
+// next.config.ts
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Add this line to enable static site generation
+  output: 'export',
+
+  // Optional: If your repository is named 'tripsters-inno' and you are not using a custom domain,
+  // you might need to add a basePath. This tells Next.js that your site will be served from a sub-path.
+  // basePath: '/tripsters-inno', 
+
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
-      },
-    ],
+    unoptimized: true,
   },
 };
 
