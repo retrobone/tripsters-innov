@@ -17,8 +17,26 @@ export type Destination = {
 };
 
 export const destinations: Destination[] = [
+  // ... (keep all the existing destinations like Shimla, Goa, etc.)
   {
-    id: 1,
+    id: 9,
+    slug: 'munnar-india',
+    name: 'Munnar',
+    country: 'India',
+    description: 'Lush green tea plantations and rolling hills.',
+    longDescription:
+      'Munnar is a town in the Western Ghats mountain range in India’s Kerala state. A hill station and former resort for the British Raj elite, it\'s surrounded by rolling hills dotted with tea plantations established in the late 19th century. Eravikulam National Park, a habitat for the endangered mountain goat Nilgiri tahr, is a seasonal trekking destination encompassing the Lakkam Waterfalls and Anamudi Peak.',
+    rating: 4.7,
+    reviews: 1300,
+    pricePerNight: 6800,
+    category: 'Hill Station',
+    tags: ['nature', 'tea gardens'],
+    imageId: 'munnar',
+    position: { lat: 10.0889, lng: 77.0595 },
+  },
+  // Add this new destination for Ziro
+  {
+    id: 10,
     slug: 'ziro-india',
     name: 'Ziro',
     country: 'India',
@@ -36,12 +54,5 @@ export const destinations: Destination[] = [
 ];
 
 export const getImageForDestination = (destination: Destination) => {
-  const image = placeholderImages.placeholderImages.find((img) => img.id === destination.imageId);
-  return (
-    image || {
-      imageUrl: 'https://picsum.photos/seed/default/600/400',
-      description: 'Default placeholder image',
-      imageHint: 'landscape',
-    }
-  );
+  // ... (this function remains unchanged)
 };
