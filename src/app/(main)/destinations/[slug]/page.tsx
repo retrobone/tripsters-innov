@@ -9,20 +9,8 @@ import { WishlistButton } from '@/components/wishlist-button';
 import { Calendar } from '@/components/ui/calendar';
 import { Separator } from '@/components/ui/separator';
 
-type DestinationPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
-export async function generateStaticParams() {
-  return destinations.map((destination) => ({
-    slug: destination.slug,
-  }));
-}
-
-export default function DestinationPage({ params }: DestinationPageProps) {
-  const destination = destinations.find((d) => d.slug === params.slug);
+export default function DestinationPage() {
+  const destination = destinations.find((d) => d.slug === 'ziro-india');
 
   if (!destination) {
     notFound();
@@ -85,11 +73,11 @@ export default function DestinationPage({ params }: DestinationPageProps) {
           <div className="space-y-4">
             <div>
               <p className="font-semibold">"An unforgettable experience!"</p>
-              <p className="text-sm text-muted-foreground">The architecture and history are breathtaking. A must-visit city.</p>
+              <p className="text-sm text-muted-foreground">The landscape and the culture are breathtaking. A must-visit place.</p>
             </div>
              <div>
               <p className="font-semibold">"Absolutely magical"</p>
-              <p className="text-sm text-muted-foreground">Felt like I was in a fairytale. The food was also incredible.</p>
+              <p className="text-sm text-muted-foreground">Felt like I was in a fairytale. The local food was also incredible.</p>
             </div>
           </div>
         </div>
