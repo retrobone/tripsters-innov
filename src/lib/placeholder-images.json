@@ -1,5 +1,6 @@
 {
   "placeholderImages": [
+    // ... (keep all the existing image objects)
     {
       "id": "ziro",
       "imageUrl": "https://picsum.photos/seed/ziro/600/400",
