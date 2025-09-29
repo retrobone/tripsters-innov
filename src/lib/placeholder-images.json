@@ -1,15 +1,13 @@
-// File: retrobone/tripsters-innov/tripsters-innov-25d0006c070fe2f6384c93b56a848a48898dcf98/src/lib/placeholder-images.json
+
 
 {
   "placeholderImages": [
-    // ... (all your existing image objects)
     {
       "id": "munnar",
       "imageUrl": "https://picsum.photos/seed/munnar/600/400",
       "description": "Lush green tea plantations in Munnar",
       "imageHint": "landscape, tea plantation, hills, nature"
     },
-    // PASTE THE ZIRO IMAGE DATA HERE
     {
       "id": "ziro",
       "imageUrl": "https://picsum.photos/seed/ziro/600/400",
